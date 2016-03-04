@@ -1,1 +1,118 @@
-hello world
+<!DOC TYPE HTML>
+<html>
+<head>
+<style>
+
+/*  SECTIONS  */
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin-top: 20%;
+	margin-left: 15%;
+	font-family: Garamond;
+}
+
+
+/*.menu a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+    /*padding: 10px 10px;
+}
+
+.menu a:hover {
+    background-color: orange;
+}
+*/
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin-top: 0%; 
+	margin-right:0%;
+	margin-bottom:25.66px; 
+	margin-left:15%;
+}
+
+.col a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.col a:hover {
+    background-color: orange;
+    color: white;
+}
+
+/*<div style="position:relative; float:left; margin:0">
+<div style="position:relative; float:left; width:33%; min-width:200px">*/
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FIVE  */
+.span_5_of_5 {
+	width: 100%;
+}
+.span_4_of_5 {
+	width: 79.2%;
+}
+.span_3_of_5 {
+	width: 58.4%;
+}
+.span_2_of_5 {
+	width: 37.6%;
+}
+.span_1_of_5 {
+	width: 16.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
+}
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+</style>
+</head>
+<body>
+<div class="section group">
+	
+	<div class="col span_1_of_5">
+	<h4>Hjalmar Bang Carlsen</h4>
+	<p>I'm a Phd fellow at University of Copenhagen, Department of Copenhagen. I work in the intersection of Digital Sociology and French Pragmatism.</p>
+	</div>
+	<div class="col span_1_of_5">
+		<img src="/Users/hjalmarcarlsen/Desktop/CarlsensCliche/content/images/hjalmar.png" style="width: 150px; height: 200px; min-width:150px;"/>
+	</div>
+
+	<div class="col span_1_of_5">
+	<p><a href="/Users/hjalmarcarlsen/Desktop/CarlsensCliche/output/index.html">/Blog</p>
+	</div>
+	<div class="col span_1_of_5">
+	<p><a href="https://ku-dk.academia.edu/HjalmarBangCarlsen">/Publications</p>
+	</div>
+	<div class="col span_1_of_5">
+	<p><a href="https://ku-dk.academia.edu/HjalmarBangCarlsen">/Projects</p>
+	</div>
+
+
+</div>
+</body>
+</html>
